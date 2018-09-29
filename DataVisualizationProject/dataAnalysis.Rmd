@@ -1,0 +1,100 @@
+---
+title: "NAFTA Trade Shift: an Evaluation of Trade between the USA, Mexico and the World"
+author: "Marli R, Liam N-S, and Yash G."
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In this short investigation into the analysis of the effects of NAFTA on the trading rates of its member countries (primarily the US and Mexico), We ask a research question, and then perform some graphical analysis on the data.
+
+```{r imports, echo=FALSE, include=FALSE}
+# import libraries
+library(tidyr)   # contains tools to tidy data
+library(ggplot2) # for plotting
+library(dplyr)   # more data cleaning tools
+
+#import all data sets
+data = read.csv("~/Desktop/Data\ Science/DataVisualizationProject/merchandise_values_annual_dataset_clean.csv")
+inter_nafta = read.csv("~/Desktop/Data\ Science/DataVisualizationProject/inter_nafta_trading_dataset_clean.csv")
+
+```
+
+## Research Question and Hypotheses
+
+Research Question: What aggregate impact if any did NAFTA have on the trade
+rates of the United States and Mexico?*
+
+Null Hypothesis: NAFTA didn't' affect trade in Mexico and the United States
+
+Alternative Hypothesis:NAFTA increased the imports and exports for all three members of NAFTA, however it benefited the United States the most.
+
+### Graphs and Analysis
+
+The following graph of normalized* transaction values shows the growth of world trade of total merchandise from 1948 to 2017. 
+
+*normalized meaning the each transaction value was divided by the first (1948) value for trade avaliable for that country, turning every value into a percent of the quantity of trade that occured in 1948. This allows for easier comparison of growth rate changes for each country since the US has significantly more world transactions than Mexico.
+
+```{r world.trading, echo=FALSE}
+### GRAPH OF WORLD TRADING BY ALL NAFTA COUNTRIES
+
+# get data on each country imports 
+us_in = filter(data, Country == "United States of America" & 
+                 Transactions == "Imports")
+mex_in = filter(data, Country == "Mexico" & 
+                  Transactions == "Imports")
+
+
+#get data on each country exports
+us_out = filter(data, Country == "United States of America" & 
+                  Transactions == "Exports")
+mex_out = filter(data, Country == "Mexico" & 
+                   Transactions == "Exports")
+
+# function to get the first Value data for a data set
+normalize_func = function(dataset) {
+  return(as.numeric(dataset$Value[1]))
+}
+
+# normalize Value column by dividing every value by the 1948 value of trading
+us_in = mutate(us_in, percentage_of_1948_Value = Value / normalize_func(us_in))
+mex_in = mutate(mex_in, percentage_of_1948_Value = Value / normalize_func(mex_in))
+
+us_out = mutate(us_out, percentage_of_1948_Value = Value / normalize_func(us_out))
+mex_out = mutate(mex_out, percentage_of_1948_Value = Value / normalize_func(mex_out))
+
+#merge separate data back together
+data_normalized = rbind(us_in, us_out, mex_in, mex_out)
+
+# plot of Nafta countries imports and exports
+ggplot(data = data_normalized, aes(x = Year, y = percentage_of_1948_Value)) + 
+  geom_line()  + aes(colour = Country) + 
+  facet_wrap(~Transactions, ncol = 4) + 
+  labs(title = "Trade Percentage Growth by Year",
+       y = "Percentage of 1948 Value")
+```
+This graph very apparently shows that for both world imports and exports of each country, the value stays relativly similar to that of its 1948 transaction rates until around 1980; the year Ronald Reagan started campaigning on the idea of NAFTA. After 1980, there is a up-tic in trading for both countries, but most noticeably, Mexico is trading a significantly greater amount with the world than it was previously. And in 1994, the year NAFTA was signed, another point of inflection is visible in the line plots for each country, leading to a sharp increase in trade rates for Mexico, and a smaller increase in trade rates for the US. This graph provides evidence that NAFTA had positive effect on trade rates for its memeber countries. 
+
+The following graph shows the amount of trade that occured between the US and Mexico over time.
+```{r member.trade, echo=FALSE}
+### GRAPH OF HOW NAFTA AFFECTED INTER MEMBER TRADING RATES
+
+#only has data from year 2000
+ggplot(data = inter_nafta, aes(x = Year, y = Value)) + geom_line()  + aes(colour = Transactions) + 
+  facet_wrap(~TradePartner, ncol = 4) + 
+  labs(title = "Transaction Values Growth by Year")
+```
+
+Sadly, the data did not have values to show data before the year 2000, which would have been particularly interesting, but you can see from the graph that as time goes on, the amount of millions of USD traded between the countries increases. Mexico appears to have consistently more imports from the US than exports to it, and the converse is true for the US transactions with Mexico. The downward spike in the middle is due to the 2008 stock market crash.
+
+
+## Results
+While there are too many confounding variables (chiefly inflation) to say that there is a strong correlation between the formation of NAFTA and increased trading in its member countries, there does appear to be evidence of weak relationship. 
+
+Ultimately, it also appeared as if our alternative hypothesis was incorrect as well; NAFTA appeared to have a large positive effect on Mexican trading rates, where as it appeared to have little noticeable effect on those of the USA. This goes against our hypothesis that it would have the greatest benefit for the USA.
+
+### Sources
+The original data was obtained from the WTO at the following location:
+https://www.wto.org/english/res_e/statis_e/trade_datasets_e.htm 

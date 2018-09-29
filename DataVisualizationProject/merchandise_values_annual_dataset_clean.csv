@@ -1,0 +1,565 @@
+"","Country","Transactions","Year","Value"
+"1","Canada","Exports",1948,3201.91
+"2","Canada","Imports",1948,2740.27
+"3","Canada","Exports",1949,3049.99
+"4","Canada","Imports",1949,2878.63
+"5","Canada","Exports",1950,3019.86
+"6","Canada","Imports",1950,3107.54
+"7","Canada","Exports",1951,3910.51
+"8","Canada","Imports",1951,4104.83
+"9","Canada","Exports",1952,4630.45
+"10","Canada","Imports",1952,4373.11
+"11","Canada","Exports",1953,4385.37
+"12","Canada","Imports",1953,4696.46
+"13","Canada","Exports",1954,4197.41
+"14","Canada","Imports",1954,4436.22
+"15","Canada","Exports",1955,4574.39
+"16","Canada","Imports",1955,4996.26
+"17","Canada","Exports",1956,5156.52
+"18","Canada","Imports",1956,6111.03
+"19","Canada","Exports",1957,5344.67
+"20","Canada","Imports",1957,6195.69
+"21","Canada","Exports",1958,5273.38
+"22","Canada","Imports",1958,5612.73
+"23","Canada","Exports",1959,5616.59
+"24","Canada","Imports",1959,6143.3
+"25","Canada","Exports",1960,5818.3
+"26","Canada","Imports",1960,6073.08
+"27","Canada","Exports",1961,6085.26
+"28","Canada","Imports",1961,6062.19
+"29","Canada","Exports",1962,6212.63
+"30","Canada","Imports",1962,6220.22
+"31","Canada","Exports",1963,6776.99
+"32","Canada","Imports",1963,6444.69
+"33","Canada","Exports",1964,8037.05
+"34","Canada","Imports",1964,7402.15
+"35","Canada","Exports",1965,8473.21
+"36","Canada","Imports",1965,8621.63
+"37","Canada","Exports",1966,10004.7
+"38","Canada","Imports",1966,10061.8
+"39","Canada","Exports",1967,10999.8
+"40","Canada","Imports",1967,10819.2
+"41","Canada","Exports",1968,13171.3
+"42","Canada","Imports",1968,12280.2
+"43","Canada","Exports",1969,14350.1
+"44","Canada","Imports",1969,14018.8
+"45","Canada","Exports",1970,16786.5
+"46","Canada","Imports",1970,14286
+"47","Canada","Exports",1971,18373.6
+"48","Canada","Imports",1971,16472
+"49","Canada","Exports",1972,21185.3
+"50","Canada","Imports",1972,20037.6
+"51","Canada","Exports",1973,26436.9
+"52","Canada","Imports",1973,24713.3
+"53","Canada","Exports",1974,34507.6
+"54","Canada","Imports",1974,34248.4
+"55","Canada","Exports",1975,34074.2
+"56","Canada","Imports",1975,36106.5
+"57","Canada","Exports",1976,40598.4
+"58","Canada","Imports",1976,40242.9
+"59","Canada","Exports",1977,43544.8
+"60","Canada","Imports",1977,42082.9
+"61","Canada","Exports",1978,48431.5
+"62","Canada","Imports",1978,46277.6
+"63","Canada","Exports",1979,58293.9
+"64","Canada","Imports",1979,56641.9
+"65","Canada","Exports",1980,67734
+"66","Canada","Imports",1980,62544
+"67","Canada","Exports",1981,72726
+"68","Canada","Imports",1981,70010
+"69","Canada","Exports",1982,71234
+"70","Canada","Imports",1982,58128
+"71","Canada","Exports",1983,76749
+"72","Canada","Imports",1983,64789
+"73","Canada","Exports",1984,90272
+"74","Canada","Imports",1984,77789
+"75","Canada","Exports",1985,90950
+"76","Canada","Imports",1985,80640
+"77","Canada","Exports",1986,90329
+"78","Canada","Imports",1986,85494
+"79","Canada","Exports",1987,98168
+"80","Canada","Imports",1987,92593
+"81","Canada","Exports",1988,117105
+"82","Canada","Imports",1988,112711
+"83","Canada","Exports",1989,121832
+"84","Canada","Imports",1989,119792
+"85","Canada","Exports",1990,127629
+"86","Canada","Imports",1990,123244
+"87","Canada","Exports",1991,127163
+"88","Canada","Imports",1991,124782
+"89","Canada","Exports",1992,134435
+"90","Canada","Imports",1992,129262
+"91","Canada","Exports",1993,145178
+"92","Canada","Imports",1993,139035
+"93","Canada","Exports",1994,165376
+"94","Canada","Imports",1994,155072
+"95","Canada","Exports",1995,192197
+"96","Canada","Imports",1995,168426
+"97","Canada","Exports",1996,201633
+"98","Canada","Imports",1996,175158
+"99","Canada","Exports",1997,214422
+"100","Canada","Imports",1997,200873
+"101","Canada","Exports",1998,214327
+"102","Canada","Imports",1998,206066
+"103","Canada","Exports",1999,238446
+"104","Canada","Imports",1999,220183
+"105","Canada","Exports",2000,276635
+"106","Canada","Imports",2000,244786
+"107","Canada","Exports",2001,259858
+"108","Canada","Imports",2001,227291
+"109","Canada","Exports",2002,252394
+"110","Canada","Imports",2002,227499
+"111","Canada","Exports",2003,272739
+"112","Canada","Imports",2003,245021
+"113","Canada","Exports",2004,316762
+"114","Canada","Imports",2004,279931
+"115","Canada","Exports",2005,360475.248
+"116","Canada","Imports",2005,322411
+"117","Canada","Exports",2006,388177.873
+"118","Canada","Imports",2006,358999.5
+"119","Canada","Exports",2007,420693.307
+"120","Canada","Imports",2007,390188.3
+"121","Canada","Exports",2008,456470.923
+"122","Canada","Imports",2008,419010.6
+"123","Canada","Exports",2009,316093.637
+"124","Canada","Imports",2009,329907
+"125","Canada","Exports",2010,387481.217
+"126","Canada","Imports",2010,402690
+"127","Canada","Exports",2011,451334.623
+"128","Canada","Imports",2011,463640
+"129","Canada","Exports",2012,455591.827
+"130","Canada","Imports",2012,476296
+"131","Canada","Exports",2013,458317.767
+"132","Canada","Imports",2013,475777
+"133","Canada","Exports",2014,476300.183336762
+"134","Canada","Imports",2014,474331.76
+"135","Canada","Exports",2015,409965.232339818
+"136","Canada","Imports",2015,428979.44
+"137","Canada","Exports",2016,390306.806003053
+"138","Canada","Imports",2016,412962.99
+"139","Canada","Exports",2017,420860.774476591
+"140","Canada","Imports",2017,441728.88
+"141","Mexico","Exports",1948,555.304
+"142","Mexico","Imports",1948,643.048
+"143","Mexico","Exports",1949,428.439
+"144","Mexico","Imports",1949,439.769
+"145","Mexico","Exports",1950,532.023
+"146","Mexico","Imports",1950,549.416
+"147","Mexico","Exports",1951,644.277
+"148","Mexico","Imports",1951,822.197
+"149","Mexico","Exports",1952,664.855
+"150","Mexico","Imports",1952,807.399
+"151","Mexico","Exports",1953,591.329
+"152","Mexico","Imports",1953,807.514
+"153","Mexico","Exports",1954,659
+"154","Mexico","Imports",1954,714.08
+"155","Mexico","Exports",1955,784.56
+"156","Mexico","Imports",1955,873.581
+"157","Mexico","Exports",1956,833.92
+"158","Mexico","Imports",1956,1071.68
+"159","Mexico","Exports",1957,734.8
+"160","Mexico","Imports",1957,1155.2
+"161","Mexico","Exports",1958,735.92
+"162","Mexico","Imports",1958,1129.02
+"163","Mexico","Exports",1959,752.72
+"164","Mexico","Imports",1959,1006.64
+"165","Mexico","Exports",1960,763.76
+"166","Mexico","Imports",1960,1186.48
+"167","Mexico","Exports",1961,826
+"168","Mexico","Imports",1961,1138.64
+"169","Mexico","Exports",1962,929.92
+"170","Mexico","Imports",1962,1143.04
+"171","Mexico","Exports",1963,984.72
+"172","Mexico","Imports",1963,1239.68
+"173","Mexico","Exports",1964,1053.68
+"174","Mexico","Imports",1964,1492.96
+"175","Mexico","Exports",1965,1145.36
+"176","Mexico","Imports",1965,1559.76
+"177","Mexico","Exports",1966,1198.72
+"178","Mexico","Imports",1966,1605.2
+"179","Mexico","Exports",1967,1144.88
+"180","Mexico","Imports",1967,1748.24
+"181","Mexico","Exports",1968,1253.84
+"182","Mexico","Imports",1968,1960.16
+"183","Mexico","Exports",1969,1429.6
+"184","Mexico","Imports",1969,2080.4
+"185","Mexico","Exports",1970,1402
+"186","Mexico","Imports",1970,2460.8
+"187","Mexico","Exports",1971,1504.16
+"188","Mexico","Imports",1971,2407.2
+"189","Mexico","Exports",1972,1694.24
+"190","Mexico","Imports",1972,2718.47
+"191","Mexico","Exports",1973,2250.17
+"192","Mexico","Imports",1973,3813.54
+"193","Mexico","Exports",1974,2957.69
+"194","Mexico","Imports",1974,6056.57
+"195","Mexico","Exports",1975,2903.84
+"196","Mexico","Imports",1975,6580.16
+"197","Mexico","Exports",1976,3417.49
+"198","Mexico","Imports",1976,6028.22
+"199","Mexico","Exports",1977,4167.44
+"200","Mexico","Imports",1977,5488.98
+"201","Mexico","Exports",1978,6005.07
+"202","Mexico","Imports",1978,8108.68
+"203","Mexico","Exports",1979,8982.02
+"204","Mexico","Imports",1979,12085.7
+"205","Mexico","Exports",1980,18031
+"206","Mexico","Imports",1980,22144
+"207","Mexico","Exports",1981,23307
+"208","Mexico","Imports",1981,28462
+"209","Mexico","Exports",1982,24055
+"210","Mexico","Imports",1982,17742
+"211","Mexico","Exports",1983,25953
+"212","Mexico","Imports",1983,12476
+"213","Mexico","Exports",1984,29101
+"214","Mexico","Imports",1984,16691
+"215","Mexico","Exports",1985,26757
+"216","Mexico","Imports",1985,19116
+"217","Mexico","Exports",1986,21804
+"218","Mexico","Imports",1986,17573
+"219","Mexico","Exports",1987,27600
+"220","Mexico","Imports",1987,19697
+"221","Mexico","Exports",1988,30691
+"222","Mexico","Imports",1988,29402
+"223","Mexico","Exports",1989,35171
+"224","Mexico","Imports",1989,36400
+"225","Mexico","Exports",1990,40711
+"226","Mexico","Imports",1990,43548
+"227","Mexico","Exports",1991,42688
+"228","Mexico","Imports",1991,51724.66
+"229","Mexico","Exports",1992,46196
+"230","Mexico","Imports",1992,64213.25
+"231","Mexico","Exports",1993,51886
+"232","Mexico","Imports",1993,67547.442
+"233","Mexico","Exports",1994,60882
+"234","Mexico","Imports",1994,81985.701
+"235","Mexico","Exports",1995,79542
+"236","Mexico","Imports",1995,74427.467
+"237","Mexico","Exports",1996,96000
+"238","Mexico","Imports",1996,91978.866
+"239","Mexico","Exports",1997,110431
+"240","Mexico","Imports",1997,113120.5
+"241","Mexico","Exports",1998,117460
+"242","Mexico","Imports",1998,129072.258
+"243","Mexico","Exports",1999,136391
+"244","Mexico","Imports",1999,146083.964
+"245","Mexico","Exports",2000,166367
+"246","Mexico","Imports",2000,179464.223
+"247","Mexico","Exports",2001,158547
+"248","Mexico","Imports",2001,173039.434
+"249","Mexico","Exports",2002,160682
+"250","Mexico","Imports",2002,173086.789
+"251","Mexico","Exports",2003,165396
+"252","Mexico","Imports",2003,175038.844
+"253","Mexico","Exports",2004,187980.442
+"254","Mexico","Imports",2004,202259.752
+"255","Mexico","Exports",2005,214207
+"256","Mexico","Imports",2005,228240.226
+"257","Mexico","Exports",2006,249960.546
+"258","Mexico","Imports",2006,263476.034
+"259","Mexico","Exports",2007,271821.215
+"260","Mexico","Imports",2007,290246.038
+"261","Mexico","Exports",2008,291264.809
+"262","Mexico","Imports",2008,318303.73
+"263","Mexico","Exports",2009,229712.337
+"264","Mexico","Imports",2009,241515.029
+"265","Mexico","Exports",2010,298305.075
+"266","Mexico","Imports",2010,310205.064
+"267","Mexico","Exports",2011,349569.049
+"268","Mexico","Imports",2011,361067.849
+"269","Mexico","Exports",2012,370769.89
+"270","Mexico","Imports",2012,380477.174
+"271","Mexico","Exports",2013,380015.051
+"272","Mexico","Imports",2013,390965.411
+"273","Mexico","Exports",2014,396911.688
+"274","Mexico","Imports",2014,411581.243
+"275","Mexico","Exports",2015,380549.785
+"276","Mexico","Imports",2015,405280.552
+"277","Mexico","Exports",2016,373939.217
+"278","Mexico","Imports",2016,397515.759098252
+"279","Mexico","Exports",2017,409494.169
+"280","Mexico","Imports",2017,432152.944
+"281","North American Free Trade Agreement (NAFTA)","Exports",1980,311331
+"282","North American Free Trade Agreement (NAFTA)","Imports",1980,341673
+"283","North American Free Trade Agreement (NAFTA)","Exports",1981,334748
+"284","North American Free Trade Agreement (NAFTA)","Imports",1981,371824
+"285","North American Free Trade Agreement (NAFTA)","Exports",1982,311731
+"286","North American Free Trade Agreement (NAFTA)","Imports",1982,330754
+"287","North American Free Trade Agreement (NAFTA)","Exports",1983,308341
+"288","North American Free Trade Agreement (NAFTA)","Imports",1983,347143
+"289","North American Free Trade Agreement (NAFTA)","Exports",1984,343349
+"290","North American Free Trade Agreement (NAFTA)","Imports",1984,440843
+"291","North American Free Trade Agreement (NAFTA)","Exports",1985,336522
+"292","North American Free Trade Agreement (NAFTA)","Imports",1985,452219
+"293","North American Free Trade Agreement (NAFTA)","Exports",1986,339291
+"294","North American Free Trade Agreement (NAFTA)","Imports",1986,485361
+"295","North American Free Trade Agreement (NAFTA)","Exports",1987,379890
+"296","North American Free Trade Agreement (NAFTA)","Imports",1987,536733
+"297","North American Free Trade Agreement (NAFTA)","Exports",1988,470223
+"298","North American Free Trade Agreement (NAFTA)","Imports",1988,601656
+"299","North American Free Trade Agreement (NAFTA)","Exports",1989,520815
+"300","North American Free Trade Agreement (NAFTA)","Imports",1989,649114
+"301","North American Free Trade Agreement (NAFTA)","Exports",1990,561932
+"302","North American Free Trade Agreement (NAFTA)","Imports",1990,683779
+"303","North American Free Trade Agreement (NAFTA)","Exports",1991,591581
+"304","North American Free Trade Agreement (NAFTA)","Imports",1991,684869.66
+"305","North American Free Trade Agreement (NAFTA)","Exports",1992,628794
+"306","North American Free Trade Agreement (NAFTA)","Imports",1992,747398.25
+"307","North American Free Trade Agreement (NAFTA)","Exports",1993,661837
+"308","North American Free Trade Agreement (NAFTA)","Imports",1993,810020.442
+"309","North American Free Trade Agreement (NAFTA)","Exports",1994,738885
+"310","North American Free Trade Agreement (NAFTA)","Imports",1994,926272.701
+"311","North American Free Trade Agreement (NAFTA)","Exports",1995,856482
+"312","North American Free Trade Agreement (NAFTA)","Imports",1995,1013705.467
+"313","North American Free Trade Agreement (NAFTA)","Exports",1996,922706
+"314","North American Free Trade Agreement (NAFTA)","Imports",1996,1089161.866
+"315","North American Free Trade Agreement (NAFTA)","Exports",1997,1014035
+"316","North American Free Trade Agreement (NAFTA)","Imports",1997,1213013.5
+"317","North American Free Trade Agreement (NAFTA)","Exports",1998,1013925
+"318","North American Free Trade Agreement (NAFTA)","Imports",1998,1279491.258
+"319","North American Free Trade Agreement (NAFTA)","Exports",1999,1070634
+"320","North American Free Trade Agreement (NAFTA)","Imports",1999,1425706.964
+"321","United States of America","Exports",1948,12653
+"322","United States of America","Imports",1948,8081
+"323","United States of America","Exports",1949,12051
+"324","United States of America","Imports",1949,7544
+"325","United States of America","Exports",1950,9993
+"326","United States of America","Imports",1950,9631
+"327","United States of America","Exports",1951,13967
+"328","United States of America","Imports",1951,11922
+"329","United States of America","Exports",1952,13203
+"330","United States of America","Imports",1952,11707
+"331","United States of America","Exports",1953,12262
+"332","United States of America","Imports",1953,11846
+"333","United States of America","Exports",1954,12854
+"334","United States of America","Imports",1954,11140
+"335","United States of America","Exports",1955,14291
+"336","United States of America","Imports",1955,12489
+"337","United States of America","Exports",1956,17333
+"338","United States of America","Imports",1956,13987
+"339","United States of America","Exports",1957,19495
+"340","United States of America","Imports",1957,14620
+"341","United States of America","Exports",1958,16367
+"342","United States of America","Imports",1958,14618
+"343","United States of America","Exports",1959,16407
+"344","United States of America","Imports",1959,17008
+"345","United States of America","Exports",1960,19626
+"346","United States of America","Imports",1960,16371
+"347","United States of America","Exports",1961,20190
+"348","United States of America","Imports",1961,15938
+"349","United States of America","Exports",1962,20973
+"350","United States of America","Imports",1962,17781
+"351","United States of America","Exports",1963,22427
+"352","United States of America","Imports",1963,18621
+"353","United States of America","Exports",1964,25690
+"354","United States of America","Imports",1964,20306
+"355","United States of America","Exports",1965,26699
+"356","United States of America","Imports",1965,23188
+"357","United States of America","Exports",1966,29379
+"358","United States of America","Imports",1966,27745
+"359","United States of America","Exports",1967,30934
+"360","United States of America","Imports",1967,28753
+"361","United States of America","Exports",1968,34063
+"362","United States of America","Imports",1968,35350
+"363","United States of America","Exports",1969,37332
+"364","United States of America","Imports",1969,38312
+"365","United States of America","Exports",1970,43225
+"366","United States of America","Imports",1970,42428
+"367","United States of America","Exports",1971,43549
+"368","United States of America","Imports",1971,48342
+"369","United States of America","Exports",1972,49199
+"370","United States of America","Imports",1972,58862
+"371","United States of America","Exports",1973,70823
+"372","United States of America","Imports",1973,73572
+"373","United States of America","Exports",1974,99437
+"374","United States of America","Imports",1974,110478
+"375","United States of America","Exports",1975,108856
+"376","United States of America","Imports",1975,105881
+"377","United States of America","Exports",1976,116794
+"378","United States of America","Imports",1976,132497
+"379","United States of America","Exports",1977,123182
+"380","United States of America","Imports",1977,160411
+"381","United States of America","Exports",1978,145847
+"382","United States of America","Imports",1978,186046
+"383","United States of America","Exports",1979,186363
+"384","United States of America","Imports",1979,222225
+"385","United States of America","Exports",1980,225566
+"386","United States of America","Imports",1980,256985
+"387","United States of America","Exports",1981,238715
+"388","United States of America","Imports",1981,273352
+"389","United States of America","Exports",1982,216442
+"390","United States of America","Imports",1982,254884
+"391","United States of America","Exports",1983,205639
+"392","United States of America","Imports",1983,269878
+"393","United States of America","Exports",1984,223976
+"394","United States of America","Imports",1984,346363
+"395","United States of America","Exports",1985,218815
+"396","United States of America","Imports",1985,352463
+"397","United States of America","Exports",1986,227158
+"398","United States of America","Imports",1986,382294
+"399","United States of America","Exports",1987,254122
+"400","United States of America","Imports",1987,424443
+"401","United States of America","Exports",1988,322427
+"402","United States of America","Imports",1988,459543
+"403","United States of America","Exports",1989,363812
+"404","United States of America","Imports",1989,492922
+"405","United States of America","Exports",1990,393592
+"406","United States of America","Imports",1990,516987
+"407","United States of America","Exports",1991,421730
+"408","United States of America","Imports",1991,508363
+"409","United States of America","Exports",1992,448163
+"410","United States of America","Imports",1992,553923
+"411","United States of America","Exports",1993,464773
+"412","United States of America","Imports",1993,603438
+"413","United States of America","Exports",1994,512627
+"414","United States of America","Imports",1994,689215
+"415","United States of America","Exports",1995,584743
+"416","United States of America","Imports",1995,770852
+"417","United States of America","Exports",1996,625073
+"418","United States of America","Imports",1996,822025
+"419","United States of America","Exports",1997,689182
+"420","United States of America","Imports",1997,899020
+"421","United States of America","Exports",1998,682138
+"422","United States of America","Imports",1998,944353
+"423","United States of America","Exports",1999,695797
+"424","United States of America","Imports",1999,1059440
+"425","United States of America","Exports",2000,781918
+"426","United States of America","Imports",2000,1259300
+"427","United States of America","Exports",2001,729100
+"428","United States of America","Imports",2001,1179180
+"429","United States of America","Exports",2002,693103
+"430","United States of America","Imports",2002,1200230
+"431","United States of America","Exports",2003,724771
+"432","United States of America","Imports",2003,1303050
+"433","United States of America","Exports",2004,814875
+"434","United States of America","Imports",2004,1525680
+"435","United States of America","Exports",2005,901082
+"436","United States of America","Imports",2005,1732706
+"437","United States of America","Exports",2006,1025967
+"438","United States of America","Imports",2006,1918077
+"439","United States of America","Exports",2007,1148199
+"440","United States of America","Imports",2007,2020403
+"441","United States of America","Exports",2008,1287442
+"442","United States of America","Imports",2008,2169487.1
+"443","United States of America","Exports",2009,1056043
+"444","United States of America","Imports",2009,1605295.7
+"445","United States of America","Exports",2010,1278495
+"446","United States of America","Imports",2010,1969183.9
+"447","United States of America","Exports",2011,1482508
+"448","United States of America","Imports",2011,2266023.985
+"449","United States of America","Exports",2012,1545703
+"450","United States of America","Imports",2012,2336524.02
+"451","United States of America","Exports",2013,1579593
+"452","United States of America","Imports",2013,2329059.8
+"453","United States of America","Exports",2014,1620531.899958
+"454","United States of America","Imports",2014,2412547.023713
+"455","United States of America","Exports",2015,1502572.229518
+"456","United States of America","Imports",2015,2315301.204354
+"457","United States of America","Exports",2016,1451010.702074
+"458","United States of America","Imports",2016,2250153.877992
+"459","United States of America","Exports",2017,1546724.565248
+"460","United States of America","Imports",2017,2409495.095621
+"461","World excluding Hong Kong re-exports","Exports",1948,58500
+"462","World excluding Hong Kong re-exports","Imports",1948,62250
+"463","World excluding Hong Kong re-exports","Exports",1949,59570
+"464","World excluding Hong Kong re-exports","Imports",1949,62750
+"465","World excluding Hong Kong re-exports","Exports",1950,62040
+"466","World excluding Hong Kong re-exports","Imports",1950,63810
+"467","World excluding Hong Kong re-exports","Exports",1951,83720
+"468","World excluding Hong Kong re-exports","Imports",1951,88350
+"469","World excluding Hong Kong re-exports","Exports",1952,81820
+"470","World excluding Hong Kong re-exports","Imports",1952,87900
+"471","World excluding Hong Kong re-exports","Exports",1953,83820
+"472","World excluding Hong Kong re-exports","Imports",1953,85060
+"473","World excluding Hong Kong re-exports","Exports",1954,86750
+"474","World excluding Hong Kong re-exports","Imports",1954,88750
+"475","World excluding Hong Kong re-exports","Exports",1955,94520
+"476","World excluding Hong Kong re-exports","Imports",1955,99090
+"477","World excluding Hong Kong re-exports","Exports",1956,105250
+"478","World excluding Hong Kong re-exports","Imports",1956,109110
+"479","World excluding Hong Kong re-exports","Exports",1957,114100
+"480","World excluding Hong Kong re-exports","Imports",1957,120850
+"481","World excluding Hong Kong re-exports","Exports",1958,110210
+"482","World excluding Hong Kong re-exports","Imports",1958,114840
+"483","World excluding Hong Kong re-exports","Exports",1959,118420
+"484","World excluding Hong Kong re-exports","Imports",1959,123080
+"485","World excluding Hong Kong re-exports","Exports",1960,130270
+"486","World excluding Hong Kong re-exports","Imports",1960,136950
+"487","World excluding Hong Kong re-exports","Exports",1961,136130
+"488","World excluding Hong Kong re-exports","Imports",1961,142430
+"489","World excluding Hong Kong re-exports","Exports",1962,143090
+"490","World excluding Hong Kong re-exports","Imports",1962,150430
+"491","World excluding Hong Kong re-exports","Exports",1963,156770
+"492","World excluding Hong Kong re-exports","Imports",1963,163600
+"493","World excluding Hong Kong re-exports","Exports",1964,175310
+"494","World excluding Hong Kong re-exports","Imports",1964,183250
+"495","World excluding Hong Kong re-exports","Exports",1965,189800
+"496","World excluding Hong Kong re-exports","Imports",1965,198590
+"497","World excluding Hong Kong re-exports","Exports",1966,207210
+"498","World excluding Hong Kong re-exports","Imports",1966,217460
+"499","World excluding Hong Kong re-exports","Exports",1967,217940
+"500","World excluding Hong Kong re-exports","Imports",1967,227720
+"501","World excluding Hong Kong re-exports","Exports",1968,241900
+"502","World excluding Hong Kong re-exports","Imports",1968,252150
+"503","World excluding Hong Kong re-exports","Exports",1969,276170
+"504","World excluding Hong Kong re-exports","Imports",1969,286380
+"505","World excluding Hong Kong re-exports","Exports",1970,316440
+"506","World excluding Hong Kong re-exports","Imports",1970,328910
+"507","World excluding Hong Kong re-exports","Exports",1971,353530
+"508","World excluding Hong Kong re-exports","Imports",1971,365560
+"509","World excluding Hong Kong re-exports","Exports",1972,418260
+"510","World excluding Hong Kong re-exports","Imports",1972,432130
+"511","World excluding Hong Kong re-exports","Exports",1973,578790
+"512","World excluding Hong Kong re-exports","Imports",1973,593710
+"513","World excluding Hong Kong re-exports","Exports",1974,839030
+"514","World excluding Hong Kong re-exports","Imports",1974,859780
+"515","World excluding Hong Kong re-exports","Exports",1975,875490
+"516","World excluding Hong Kong re-exports","Imports",1975,910540
+"517","World excluding Hong Kong re-exports","Exports",1976,990290
+"518","World excluding Hong Kong re-exports","Imports",1976,1023910
+"519","World excluding Hong Kong re-exports","Exports",1977,1126280
+"520","World excluding Hong Kong re-exports","Imports",1977,1168400
+"521","World excluding Hong Kong re-exports","Exports",1978,1304100
+"522","World excluding Hong Kong re-exports","Imports",1978,1355620
+"523","World excluding Hong Kong re-exports","Exports",1979,1655330
+"524","World excluding Hong Kong re-exports","Imports",1979,1689680
+"525","World excluding Hong Kong re-exports","Exports",1980,2029496.624806
+"526","World excluding Hong Kong re-exports","Imports",1980,2070546.554916
+"527","World excluding Hong Kong re-exports","Exports",1981,2006923.140442
+"528","World excluding Hong Kong re-exports","Imports",1981,2063023.246536
+"529","World excluding Hong Kong re-exports","Exports",1982,1878146.235763
+"530","World excluding Hong Kong re-exports","Imports",1982,1936207.98924
+"531","World excluding Hong Kong re-exports","Exports",1983,1837784.433438
+"532","World excluding Hong Kong re-exports","Imports",1983,1883364.897388
+"533","World excluding Hong Kong re-exports","Exports",1984,1945015.524477
+"534","World excluding Hong Kong re-exports","Imports",1984,2004956.523536
+"535","World excluding Hong Kong re-exports","Exports",1985,1939411.7874
+"536","World excluding Hong Kong re-exports","Imports",1985,2002037.632
+"537","World excluding Hong Kong re-exports","Exports",1986,2122159.789968
+"538","World excluding Hong Kong re-exports","Imports",1986,2191261.492
+"539","World excluding Hong Kong re-exports","Exports",1987,2491828.1402
+"540","World excluding Hong Kong re-exports","Imports",1987,2560050.88
+"541","World excluding Hong Kong re-exports","Exports",1988,2833308.01927374
+"542","World excluding Hong Kong re-exports","Imports",1988,2929664.51060335
+"543","World excluding Hong Kong re-exports","Exports",1989,3054313.81183799
+"544","World excluding Hong Kong re-exports","Imports",1989,3160853.46143911
+"545","World excluding Hong Kong re-exports","Exports",1990,3436350.53518523
+"546","World excluding Hong Kong re-exports","Imports",1990,3552468.79859471
+"547","World excluding Hong Kong re-exports","Exports",1991,3442437.81233562
+"548","World excluding Hong Kong re-exports","Imports",1991,3566952.59835704
+"549","World excluding Hong Kong re-exports","Exports",1992,3689835.64260791
+"550","World excluding Hong Kong re-exports","Imports",1992,3822693.99925284
+"551","World excluding Hong Kong re-exports","Exports",1993,3688139.73206325
+"552","World excluding Hong Kong re-exports","Imports",1993,3804830.59083081
+"553","World excluding Hong Kong re-exports","Exports",1994,4205534.54629466
+"554","World excluding Hong Kong re-exports","Imports",1994,4322356.7163203
+"555","World excluding Hong Kong re-exports","Exports",1995,5023694.63233216
+"556","World excluding Hong Kong re-exports","Imports",1995,5161875.96993351
+"557","World excluding Hong Kong re-exports","Exports",1996,5252568.7044174
+"558","World excluding Hong Kong re-exports","Imports",1996,5417739.57387578
+"559","World excluding Hong Kong re-exports","Exports",1997,5431430.23899158
+"560","World excluding Hong Kong re-exports","Imports",1997,5601838.60191753
+"561","World excluding Hong Kong re-exports","Exports",1998,5352858.90744342
+"562","World excluding Hong Kong re-exports","Imports",1998,5558654.73167068
+"563","World excluding Hong Kong re-exports","Exports",1999,5567359.04187766
+"564","World excluding Hong Kong re-exports","Imports",1999,5804033.35115755
