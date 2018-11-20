@@ -1,4 +1,4 @@
-# practiceR
+# R DataSci
 
 In this repo, I practice data science and data analysis through R.
 
