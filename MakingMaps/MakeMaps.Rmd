@@ -1,0 +1,61 @@
+---
+title: "MakeMaps.Rmd"
+author: "Liam Niehus-Staab"
+date: "10/2/2018"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+#imports
+library(ggplot2)  # The grammar of graphics package
+library(maps)     # Provides latitude and longitude data for various maps
+library(dplyr)    # To assist with cleaning and organizing data
+
+# read the state population data
+StatePopulation <- 
+  read.csv("~/Shared/F18MAT295/r-tutorials-master/intro-maps/data/StatePopulation.csv",
+           as.is = TRUE)
+MainStates = map_data("state")
+```
+### On Your Own Questions
+
+
+1.) Restrict the `states` and `all.cities` files to only a few contiguous states
+```{r}
+NewStates <- filter(MainStates,region ==  "new york" | region ==
+                    "vermont" | region ==  "new hampshire" | region ==
+                    "massachusetts" | region ==  "rhode island" | 
+                    region ==  "connecticut" )
+```
+2.) Color each state by the number of electorial votes in that state.
+```{r}
+merged = inner_join(NewStates, StatePopulation, by = "region")
+graph = ggplot() + 
+  geom_polygon(data = merged, aes(x= long, y = lat, group = group, fill = elect_votes),
+               color = "black") +
+  scale_fill_continuous(name = "Colored by Electoral votes",
+                        low = "pink", high = "purple")
+graph
+```
+3.) Add a point to represent each city in these states.
+```{r}
+cities <- filter(us.cities, country.etc == "NY" | country.etc == "RI" | 
+                 country.etc == "NH" | country.etc == "MA" |
+                 country.etc == "CT" | country.etc == "VT")
+
+graph = graph + geom_point(data=cities, aes(x=long, y=lat), 
+           color = "black") 
+graph
+```
+4.) Color the cities so state capitals are clearly differentiated from other cities. 
+
+```{r}
+capitals = filter(cities, capital == 2)
+
+graph = graph + 
+    geom_point(data = capitals, aes(x = long, y = lat), color = "red")
+graph
+```

@@ -1,0 +1,85 @@
+---
+title: "Text Analysis Lab"
+author: "Liam Niehus-Staab"
+date: "10/29/2018"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+#libs
+knitr::opts_chunk$set(echo = TRUE)
+library(stringr) #string library
+require(stringi, quietly = TRUE,warn.conflicts = FALSE)
+# install.packages("knitr")
+require(knitr, quietly = TRUE, warn.conflicts = FALSE)
+require(ggplot2, quietly = TRUE, warn.conflicts = FALSE) #for qplots
+
+#imports
+
+```
+#Intro Strings Questions
+```{r}
+veggies = c("carrot", "bean", "peas", "cabbage", "scallion", "asparagus")
+
+# + Find those strings that contain the pattern "ea".
+str_detect(veggies, "ea") 
+```
+```{r}
+# + Find those strings that end in "s".
+str_detect(veggies, "s$")
+```
+```{r}
+# + Find those strings that contain at least two "a"'s.
+str_detect(veggies, ".*a.*a")
+```
+```{r}
+# + Find those strings that begin with any letter except "c".
+str_detect(veggies, "^[^c]")
+```
+```{r}
+# + Find the starting and ending position of the pattern "ca" in each string.
+str_locate_all(veggies, "ca")
+```
+
+
+2. The regular expression `"^[Ss](.*)(t+)(.+)(t+)"` matches "scuttlebutt", "Stetson", and "Scattter", but not "Scatter." Why?
+The regex matches either S or s as first char, then any number of any char, then 1 or more t, then 1 or more of any character, then 1 or more t.
+
+
+It doesn't match "Scatter" because after it matches the first 't' with t+, then the next 't' with .+, and it cant
+match the last t+ because there are only 2 't's in Scatter.
+
+
+
+##Text Mining
+```{r}
+#read in blogs, twitter and news
+Twitter1 <- readLines("~/Shared/F18MAT295/en_US.twitter.txt",encoding = "UTF-8", skipNul = TRUE, warn = FALSE)
+
+# 1. Are strings involving the words "love" longer or shorter than strings with the word "hate"?
+#Strings with love appear to be a little be shorter on average.
+```
+```{r}
+# * How many rows contain the word hate (include upper and lower case letters)?
+hate <- sum(grepl("[Hh][Aa][Tt][Ee]", Twitter1))
+```
+```{r}
+# * Give a 5 number summary for the number of characters in texts that include the word hate.
+hate2 = grep("[Hh][Aa][Tt][Ee]", Twitter1)
+hateTwit = Twitter1[hate2]
+summary(nchar(hateTwit))
+```
+```{r}
+# * Give a 5 number summary for the number of characters in texts that include the word love.
+love2 = grep("[Ll][Oo][Vv][Ee]", Twitter1)
+loveTwit = Twitter1[love2]
+summary(nchar(loveTwit))
+```
+```{r}
+# * Create bar charts for both text files.
+TwL = stri_count_words(loveTwit) 
+qplot(TwL, binwidth = 5, main = "Number of words in each line containing 'love'")
+TwH = stri_count_words(hateTwit) 
+qplot(TwH, binwidth = 5, main = "Number of words in each line containing 'hate'")
+
+```

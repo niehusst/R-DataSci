@@ -1,0 +1,79 @@
+---
+title: "Data Scraping Lab"
+author: "Liam Niehus-Staab, Ishaan Tibrewal, Thomas Leistikow"
+date: "11/12/2018"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rvest)
+library(stringr)
+library(dplyr)
+library(mosaic)
+library(ggplot2)
+```
+
+## Clean Data
+```{r} 
+baseball = read_html("https://en.wikipedia.org/wiki/Triple_Crown_(baseball)")
+
+#pull out table elements from wiki page
+ball = html_nodes(baseball, "table")
+
+#choose pitching table
+pitching = html_table(ball, header = TRUE, fill = TRUE)[[3]]
+
+#rename columns
+names(pitching)[5:7] = c("EarnedRunAverage", "Wins", "StrikeOuts")
+
+#get rid of asterix in the 3 cols above
+pitching$EarnedRunAverage = as.numeric(str_replace_all(pitching$EarnedRunAverage,
+                                                       "\\*", ""))
+pitching$Wins = as.numeric(str_replace_all(pitching$Wins,
+                                                       "\\*", ""))
+pitching$StrikeOuts = as.numeric(str_replace_all(pitching$StrikeOuts,
+                                                       "\\*", ""))
+#remove extra useless refs col
+pitching$`Ref(s)` <- NULL
+
+#get batting data
+batting = html_table(ball, header = TRUE, fill = TRUE)[[2]]
+
+#delete useless col
+batting$`Ref(s)` <- NULL
+
+#rename columns
+names(batting)[6:8] = c("HomeRuns", "RunsBattedIn", "BattingAvg")
+
+#get rid of asterix in the 3 cols above
+batting$HomeRuns = as.numeric(str_replace_all(batting$HomeRuns,
+                                                       "\\*", ""))
+batting$RunsBattedIn = as.numeric(str_replace_all(batting$RunsBattedIn,
+                                           "\\*", ""))
+batting$BattingAvg = as.numeric(str_replace_all(batting$BattingAvg,
+                                                 "\\*", ""))
+```
+
+## Show Cleaned Data
+```{r} 
+#show tables
+head(batting)
+head(pitching)
+```
+
+## Plot Data
+```{r}
+#make plot
+ggplot(data = pitching, aes(x = Year, y = Wins)) + 
+  geom_point() + stat_smooth(method = lm) + labs(title = "Triple Crown Wins by Year")
+
+```
+It can be seen that as time has gon one, winners of the pitching tripple crown
+in baseball have had a clearly decreasing ratio of wins. Because having the
+triple crown means that each player lead the league in wins, run average, and
+strike outs, that means that ever single pitcher in the whole league has been
+progressively getting fewer wins to their name as the years go on. This could
+say something about teams being more balanced as time goes on, or it may have
+something to do with there being more pitchers in each team (causing the wins
+to be spread out over a greater number of players) over time. 

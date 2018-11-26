@@ -1,0 +1,58 @@
+---
+title: "Terrorism Lab"
+author: "Liam Niehus-Staab & Albert"
+date: "10/4/2018"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# load required packages
+library(maptools) # creates maps and work with spatial files
+library(broom)    # assists with tidy data
+library(ggplot2)  # graphics package
+library(leaflet)  # interactive graphics (output does not show in RMD files)
+library(dplyr)    # joining data frames
+library(readr)    # quickly reads files into R
+
+# Reads the csv
+TerrorismData <- read_csv("~/Shared/F18MAT295/r-tutorials-master/maps-shapefiles/data/terrorismData.csv")
+
+GTdata <- read.csv("~/Shared/F18MAT295/case-studies-master/Terrorism_CaseStudy/data/GTdata.csv")
+
+Worldshapes <- readShapeSpatial("~/Shared/F18MAT295/r-tutorials-master/maps-shapefiles/data/ne_50m_admin_0_countries")
+```
+Tidy the Terrorism data
+```{r, echo=FALSE}
+
+
+#show only attacks against government
+govAttacks = filter(GTdata, TargetType == "Government")
+
+#Create a new column (with a numeric class) where 1 represents success and 0 represents failure
+govAttacks = mutate(govAttacks,
+                    SuccessRate=as.numeric(as.logical(GTdata$Success=="successful")))
+
+#Verify that a new column, Success2, is numeric. Numeric columns can be summed.
+str(govAttacks)
+
+#Create a table using counts of total incidences, total successful incidences by TargetType, and percent successful
+dplyr::summarise(group_by(CBRNIncidents, TargetType), 
+                 TotalCount=n(),
+                 SuccessfulCount=sum(Success2),
+                 PercentSuccessful=SuccessfulCount/TotalCount)
+
+
+
+```
+
+Graph 
+```{r}
+#title
+#Success rates of terrism against governments by country
+```
+Question:
+Which governments had the most terrorist attacks against them? How successful were those attacks?
+
+Analysis of Graph:
+The graphic shows that Iraq had not only the most total attacks, but also appears to have the greatest number of successful attacks. Nearby Turkmenistan appears to have the lowest attack success rate, although it does not have as many attacks. Some central African countries have relativly high terrorism success rates, but fewer total attacks. Generally, it appears that countries with high terrorism success rates also have a large number of total terrorist attacks. 

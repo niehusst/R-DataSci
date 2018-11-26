@@ -1,0 +1,48 @@
+---
+title: "ggplot2 Lab"
+author: "Liam Niehus-Staab"
+date: "9/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# import libs and csv
+library(dplyr)
+library(ggplot2)
+library(mosaic)
+AmesHousing <- read.csv("~/Shared/F18MAT295/r-tutorials-master/data-viz/data/AmesHousing.csv")
+
+```
+
+
+```{r AmesHousing}
+#clean data;
+#Restrict the `AmesHousing` data to only sales under normal conditions. 
+cleanHousing = filter(AmesHousing, Condition.1 == "Norm")
+
+#Create a new variable called `TotalSqFt` and remove homes with >3000 total sq feet.
+cleanHousing = mutate(cleanHousing, TotalSqFt = Gr.Liv.Area  +  Total.Bsmt.SF)
+cleanHousing = filter(cleanHousing, Total.Bsmt.SF <= 3000)
+
+# Create a new var, `No` indicates no fp in home and `Yes` indicates fp(s) in home.
+cleanHousing = mutate(cleanHousing, hasFireplace = cleanHousing$Fireplaces >= 1)
+cleanHousing$hasFireplace[cleanHousing$hasFireplace == TRUE] = "Yes"
+cleanHousing$hasFireplace[cleanHousing$hasFireplace == FALSE] = "No"
+
+# create plot
+ggplot(data = cleanHousing, aes(x = TotalSqFt, y = (SalePrice)/100000 )) + 
+  geom_point()  + 
+  aes(colour = Bsmt.Qual)  + 
+  stat_smooth(method = lm) + 
+  labs(title = "Ames Home Sale Price by Total Area", 
+       x = "Total Area (ft^2)",
+       y = "Sale Price ($100000)",
+       colour = "Basement Quality") +
+  scale_color_hue(labels = c("Excellent", "Fair", "Good", "Average", "NA")) 
+```
+
+The graph shows total area (in square feet) of the house, combined with basement quality, predicting the sale price of a home in Ames, Iowa, in the hundreds of thousands of dollars. 
+While not an earth shattering revelation that larger homes will sell for more, it is an extremely accurate heuristic. What's more, when the data is color coded by basement quality, the trend is even clearer when the basement quality is excellent. While basement quality and year built are highly correlated variables, surprisingly, basement quality seems to be a better predictor of sale price. A home with an excellent quality basement is more likely to have a higher sale price than a newly built home (judged from eyeballing plot data). 
+A strength of this graph is that a linear model fits the data well, showing a clear trend that homes with a large total area and an excellent quality basement will very likely have a large sale price.
+A limitation of the graph is that due to the large number of data points overlapping, it is difficult to tell what the shape and quantity of the scatter is for the color coded variable; the excellent basement quality points disappear behind the good basement quality points and so on. This could be solved by facetting by Basement quality instead of color coding, but then it becomes more difficult to compare the variables on 5 separate graphs, so I decided to keep it color coded.
