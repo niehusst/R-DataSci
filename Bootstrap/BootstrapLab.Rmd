@@ -1,0 +1,69 @@
+---
+title: "BootstrapLab"
+author: "Liam Niehus-Staab"
+date: "11/25/2018"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(CarletonStats)
+tv <- read.csv("/data/home/Shared/F18MAT295/TV.csv")
+```
+
+## 1 sample bootstrapping
+
+### **Question 1.** Is this an observational study or an experiment? Briefly justify your answer.
+This is an observational study because the TV stations/broadcasts are not being controlled in any way, the existing stations are just being watched and data is being recorded from it.
+
+### **Question 2.** Why did Brad randomly select the 30 half hour segments rather than simply choosing his favorites?
+Choosing his favorites would have almost certainly biased the data. By choosing random segments of even length, Brad is trying to avoid biasing the data.
+
+### **Question 8.** What is the bootstrap standard error?
+The standard error of the bootstrap distribution is 0.41843
+
+### **Question 9.** Calculate a 95% plug-in confidence interval for the mean commercial duration per 30-minute spot on basic cable. 
+The 95% confidence interval is (8.41, 10.02). 
+
+### **Question 10.** Give a one sentence interpretation of the confidence interval you just found in the context of the problem.
+It's 95% likely that the true mean length of commercials in a 30-minute spot of basic cable is between 8.41 minutes and 10.02 minutes.
+
+### **Question 14.** What is the bootstrap standard error for the extended cable?
+Bootstrap SE is 0.64224
+
+### **Question 15.** Calculate a 95% plug-in confidence interval for the mean commercial duration per 30-minute spot on extended cable. 
+The 95% confidence interval is (5.57, 8.08). 
+
+### **Question 16.** Give a one sentence interpretation of the confidence interval you just found in the context of the problem.
+It's 95% likely that the true mean length of commercials in a 30-minute spot of extended cable is between 5.57 minutes and 8.08 minutes.
+
+### **Question 17.** Brad's original question regarded whether there were more commercials on basic cable channels. What do the two confidence intervals we just calculated reveal about this?
+The confidence intervals don't intersect at all, so the mean commercial length on basic and extended cable are unlikely to be the same (and the extended cable confidence interval is less than the basic cable interval). That means it is very likely that Brad's hypothesis that TV commercials on extended cable are shorter is true.
+
+
+## 2 sample bootstrap
+
+### **Question 2.** Explain what an individual case is for the bootstrap distribution.
+A single case in the (2 sample) bootstrap distribution is a random sample with replacement from the original sample of each of the populations being compared, and then finding the statistic of interest from the 2 random samples. (difference of means in this case)
+
+### **Question 3.** Where is the bootstrap distribution centered?
+Right on top of the observed distribution; about 2.33 (minutes).
+
+### **Question 4.** Describe the shape of the bootstrap distribution.
+The distribution is bell shaped, aka normal.
+
+### **Question 5.** Calculate a 95% plug-in confidence interval for the difference in mean commercial time in half hour blocks between basic and extended cable channels.
+The 95% confidence interval is (0.86, 3.81).
+
+### **Question 6.** Give a one sentence interpretation of the confidence interval you just found in the context of the problem.
+It's 95% likely that the true difference of the means of basic and extended cable commercials in a 30-minute spot is between 0.86 minutes and 3.81 minutes.
+
+### **Question 7.** Does the confidence interval you just found provide evidence of a difference in mean commercial time in half hour blocks between basic and extended cable channels? Justify why or why not.
+The confidence interval does provide evidence for a difference in mean commercial time between basic and extended cable. As all values of the confidence interval are greater than zero, it is likely that there is a non-zero difference between the mean commercial lengths; ranging from difference of a little less than a minute to almost 4 minutes of commercial time. 
+
+
+
+
+

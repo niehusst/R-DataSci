@@ -1,0 +1,21 @@
+Day,Location,Music,Price,Time of Day,Weather,Temperature,Sales,Gross Income,Costs,Profit,Current Money
+1,Business,none,$3 ,Lunch,Constant,56,103,309,351.5,-42.5,19957.5
+2,Business,none,$3 ,Lunch,Constant,66,96,288,348,-60,19897.5
+3,Park,none,$3 ,Lunch,Constant,63,76,228,338,-110,19787.5
+4,Business,none,$3 ,Lunch,Constant,61,87,261,343.5,-82.5,19705
+5,Park,none,$3 ,Lunch,Constant,52,84,252,342,-90,19615
+6,Park,none,$3 ,Lunch,Constant,64,73,219,336.5,-117.5,19497.5
+7,Park,none,$3 ,Lunch,Constant,53,77,231,338.5,-107.5,19390
+8,Park,none,$3 ,Lunch,Constant,48,76,228,338,-110,19280
+9,Business,none,$3 ,Lunch,Constant,58,84,252,342,-90,19190
+10,Business,none,$3 ,Lunch,Constant,56,82,246,341,-95,19095
+11,Park,none,$3 ,Lunch,Constant,55,70,210,335,-125,18970
+12,Business,none,$3 ,Lunch,Constant,46,94,282,347,-65,18905
+13,Park,none,$3 ,Lunch,Constant,48,58,174,329,-155,18750
+14,Business,none,$3 ,Lunch,Constant,57,88,264,344,-80,18670
+15,Business,none,$3 ,Lunch,Constant,51,99,297,349.5,-52.5,18617.5
+16,Park,none,$3 ,Lunch,Constant,55,80,240,340,-100,18517.5
+17,Business,none,$3 ,Lunch,Constant,53,96,288,348,-60,18457.5
+18,Park,none,$3 ,Lunch,Constant,56,67,201,333.5,-132.5,18325
+19,Park,none,$3 ,Lunch,Constant,55,67,201,333.5,-132.5,18192.5
+20,Business,none,$3 ,Lunch,Constant,57,98,294,349,-55,18137.5
